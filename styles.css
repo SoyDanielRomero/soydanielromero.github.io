@@ -310,7 +310,7 @@ nav ul li a:hover{
 
 /* Soluciones Section */
 #soluciones .card{
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.13);
     border:0;
     text-align: center;
     width:100%;
