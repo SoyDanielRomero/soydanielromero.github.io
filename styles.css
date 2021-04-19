@@ -14,14 +14,14 @@ p{
     letter-spacing: 0.5px;
 }
 h2{
-    color:#ff0063;
-    text-align: center;
+    color:#ff0066;
     text-transform:capitalize;
     font-weight: 600;
-    margin:2em 0;
 }
-h4{
+h3{
     color: #6600ff;
+    text-transform: capitalize;
+    font-size: 1.3em;
 }
 button{
     border-radius: 50px!important;
@@ -51,7 +51,7 @@ nav ul li a:hover{
 /* sticky nav bar */
 .fixed-top{
     opacity: 0.9;
-    background-image: linear-gradient(100deg,#6600ff 0%,#ff0063 89%);
+    background-image: linear-gradient(100deg,#6600ff 0%,#ff0066 89%);
 }
 /* End Sticky nav bar */
 
@@ -77,21 +77,26 @@ nav ul li a:hover{
     color: white;
 }
 /* Botones Hero */
-.btn-primary{
-    background-color: #ff0063!important;
-    border-color:#ff0063!important;
+#hero .btn-primary{
+    background-color: #ff0066!important;
+    border-color:#ff0066!important;
+    box-shadow:0px 0px 30px 0px rgba(102, 0, 255, 0.5)!important;
 }
-.btn-primary:hover{
+#hero .btn-primary:hover{
     background-color: #6600ff!important;
     border-color:#6600ff!important;
+    box-shadow:0px 0px 30px 0px rgba(255, 0, 102, 0.5)!important;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 #hero button{
-    max-width:30%;
+    max-width:40%;
     border-radius: 50px!important;
     align-items: flex-end!important ;
-    padding-left: 3%;
-    padding-right: 3%;
-    font-weight: 500;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 #hero button span {
     cursor:pointer!important;
@@ -124,7 +129,7 @@ nav ul li a:hover{
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: transparent;
-    background-image: linear-gradient(100deg,#6600ff 0%,#ff0063 89%);
+    background-image: linear-gradient(100deg,#6600ff 0%,#ff0066 89%);
 }
 /* End Hero Section */
 
@@ -154,6 +159,10 @@ nav ul li a:hover{
 /* Estudios Section */
 #estudios{
     margin:5vh 0;
+}
+#estudios h2{
+    margin:2em 0;
+    text-align: center;
 }
 /* logo slider */
 /* Slider code from solodev.com */
@@ -295,7 +304,7 @@ nav ul li a:hover{
 }
 #valores {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 /* End Valores Section */
 
@@ -309,7 +318,7 @@ nav ul li a:hover{
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 #soluciones .card-body{
-    padding: 14% 14% 14% 14%;
+    padding: 10%;
 }
 #soluciones .icon{
     width:100px;
@@ -317,7 +326,7 @@ nav ul li a:hover{
     margin-bottom:20px;
 }
 #soluciones .card-title{
-    color:#ff0063;
+    color:#ff0066;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     line-height: 1.5em;
@@ -330,9 +339,18 @@ nav ul li a:hover{
 #soluciones button{
     background-color: #6600ff!important;
     border-color: #6600ff!important;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 #soluciones button:hover{
-    background-color: #ff0063!important;
-    border-color: #ff0063!important;
+    background-color: #ff0066!important;
+    border-color: #ff0066!important;
+    box-shadow:0px 0px 20px 0px rgba(255, 0, 102, 0.5)!important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#soluciones .cards{
+    margin:80px 0;
 }
 /* End Soluciones Section */
