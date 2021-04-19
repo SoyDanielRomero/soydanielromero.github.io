@@ -1,0 +1,338 @@
+body{
+    display: block;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", Sans-serif;
+}
+p{
+    color:#2c2c2c;
+    font-size: 16px;
+    font-weight: 300;
+    margin:2% 0;
+    letter-spacing: 0.5px;
+}
+h2{
+    color:#ff0063;
+    text-align: center;
+    text-transform:capitalize;
+    font-weight: 600;
+    margin:2em 0;
+}
+h4{
+    color: #6600ff;
+}
+button{
+    border-radius: 50px!important;
+}
+/* Nav Bar */
+nav{
+    background-color: transparent;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+nav ul li a {
+    color:white;
+    font-size: 20px;
+    margin: auto 10px;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    color:white;
+    border-bottom: 3px solid white;
+    padding: 10px 0px;
+}
+
+/* sticky nav bar */
+.fixed-top{
+    opacity: 0.9;
+    background-image: linear-gradient(100deg,#6600ff 0%,#ff0063 89%);
+}
+/* End Sticky nav bar */
+
+/* toggler */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem white;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* End toggler */
+/* End Nav Bar */
+/* Hero Section */
+
+#hero h1{
+    text-transform:capitalize;
+    font-weight: 700;
+    color: white;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+#hero p{
+    color: white;
+}
+/* Botones Hero */
+.btn-primary{
+    background-color: #ff0063!important;
+    border-color:#ff0063!important;
+}
+.btn-primary:hover{
+    background-color: #6600ff!important;
+    border-color:#6600ff!important;
+}
+#hero button{
+    max-width:30%;
+    border-radius: 50px!important;
+    align-items: flex-end!important ;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: 500;
+}
+#hero button span {
+    cursor:pointer!important;
+}
+#hero .heroButtons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:4vh;
+    z-index: 2;
+}
+/* End Botones Hero */
+#hero .col{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+#hero .img-col{
+    margin-top: 30px;
+}
+#hero img{
+    max-width: 100%;
+    width:70%;
+    margin-left:8vw;
+    border-radius: 200px 80px 80px 80px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+#hero {
+    position:relative!important;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: transparent;
+    background-image: linear-gradient(100deg,#6600ff 0%,#ff0063 89%);
+}
+/* End Hero Section */
+
+/* divider code from shapedivider.app  */
+.custom-shape-divider-bottom-1618785263 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1618785263 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1618785263 .shape-fill {
+    fill: #FFFFFF;
+}
+/* end divider */
+
+/* Estudios Section */
+#estudios{
+    margin:5vh 0;
+}
+/* logo slider */
+/* Slider code from solodev.com */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* end logo slider */
+/* End Estudios Section */
+
+/* Valores Section */
+#valores .col{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#valores img{
+    max-width: 100%;
+    width:70%;
+    margin-left:5vw;
+    border-radius: 200px 80px 80px 80px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+#valores h2{
+    margin:0;
+    text-align: left;
+}
+#valores {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* End Valores Section */
+
+/* Soluciones Section */
+#soluciones .card{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    border:0;
+    text-align: center;
+    width:100%;
+    border-radius: 15px 15px 15px 70px;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+#soluciones .card-body{
+    padding: 14% 14% 14% 14%;
+}
+#soluciones .icon{
+    width:100px;
+    height:90px;
+    margin-bottom:20px;
+}
+#soluciones .card-title{
+    color:#ff0063;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+}
+#soluciones .card-text{
+    margin:20px 0;
+    text-align: left;
+}
+#soluciones button{
+    background-color: #6600ff!important;
+    border-color: #6600ff!important;
+}
+#soluciones button:hover{
+    background-color: #ff0063!important;
+    border-color: #ff0063!important;
+}
+/* End Soluciones Section */
