@@ -5,16 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MIT xPRO Week 2 Ball Challenge</title>
+        <style>
+            /*Tablets*/
+            @media only screen and (min-width: 780px) {
+                html{
+                    width: 70vw;
+                    height: 70vh;
+                }
+
+                body{
+                    margin-left:20vw; margin-top:5vh;
+                }    
+            }
+            /* Moviles */
+            @media only screen and (min-width: 480px){
+                body{
+                    margin-left:15vw; margin-top:3vh;
+                }
+            }
+        </style>
     </head>
     <body style="background:rgb(241, 241, 241);margin-left:35vw; margin-top:7vh; position:absolute;">
-        <a href="../index.html" rel="nofollow" style="position:fixed; top:2vh; left:45vw;">Back to Home</a>
+        <a href="../../index.html" rel="nofollow" style="position:fixed; top:2vh; left:45vw;">Volver a Inicio</a>
             <div id="ball" style="
             z-index:1;
             position:absolute;
             left:0px;
             top:0px;
-            width:50px;
-            height:50px;
+            width:2rem;
+            height:2rem;
             border-radius:50%;
             background:black;">
             </div>

@@ -11,7 +11,7 @@ var counter = 0;
 var limit = 0;
             
 // creacion del objeto
-var createBall = function(x,y,color,radius,id){
+var createBall = function(x,y,color,radius){
   // atributos del objeto
   var div = document.createElement('div');
   div.id = 'ball';
@@ -29,6 +29,7 @@ var createBall = function(x,y,color,radius,id){
   limit ++;
   return div,limit;        
 }
+//función de ocultar bola anterior
 
 //función que cambia atributos css del elemento html"ball"
 function moveBall() {
@@ -50,6 +51,7 @@ function moveBall() {
     // si la bola alcanza un límite horizontal crea una nueva bola
     counter++;
     createBall(positionX,positionY,color,Math.floor(50*(Math.random())).toString() + '%',counter.toString());
+
   }
   if(positionY <= Ymin || positionY >= Ymax ){ // si la bola alcanza uno de los límites verticales, la pone en movimiento
     moveY = !moveY;
