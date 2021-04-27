@@ -4,7 +4,7 @@ This is an exercise developed during MIT xPro Professional Certificate in Coding
 
 ## Source Code 🤖
 
-The [initial source code](https://soydanielromero.github.io/projects/MIT-PacManChallenge/source/starter01.html) was provided by _Proffesor John Williams_ from _MIT xPro_ Professional Certificate in Coding: Full Stack Development with MERN. The License can be found [here](https://soydanielromero.github.io/projects/MIT-PacManChallenge/source/LICENSE)
+The [initial source code](https://soydanielromero.github.io/projects/MIT-PacManChallenge/source/starter01.html) was provided by _Proffesor John Williams_ from _MIT xPro_ Professional Certificate in Coding: Full Stack Development with MERN. The License can be found [here](https://soydanielromero.github.io/projects/MIT-PacManChallenge/source/LICENSE).
 
 **My contribution to this exercise is:**
 - The function checkPageBounds
@@ -28,31 +28,11 @@ To see this project running in live action please go to [Index.html](https://soy
 
 ## Support 🦸‍♂️️
 
-If you have any question please send an email to: [hola@soydanielromero.com](mailto:hola@soydanielromero.com)
+If you have any question please send an email to: [hola@soydanielromero.com](mailto:hola@soydanielromero.com).
 
 ## Roadmap 🗺
 
 This is a coding exercise and there won't be any fixes or improvements.
-
-## Files 📁
-
-- Root
-    - index.html
-    - README.md
-- /img
-    - Ghost1.png
-    - Ghost2.png
-    - Ghost3.png
-    - Ghost4.png
-    - PacMan1.png
-    - PacMan2.png
-    - PacMan3.png
-    - PacMan4.png
-- /script
-    - pacman.js
-- /source
-    - starter01.html
-    - LICENSE
 
 ## License information 👨‍⚖️
 
@@ -75,3 +55,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Files 📁
+
+- Root
+    - index.html
+    - LICENSE
+    - README.md
+- /img
+    - Ghost1.png
+    - Ghost2.png
+    - Ghost3.png
+    - Ghost4.png
+    - PacMan1.png
+    - PacMan2.png
+    - PacMan3.png
+    - PacMan4.png
+- /script
+    - pacman.js
+- /source
+    - LICENSE
+    - starter01.html
