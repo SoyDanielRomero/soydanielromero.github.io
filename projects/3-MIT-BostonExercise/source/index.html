@@ -1,0 +1,85 @@
+<h2>The Top 5 Salaries are</h2>
+
+<div id="top5">
+  <!-- populated by JS-->
+</div>
+
+<h2>The Ones Above $100.000</h2>
+
+<div id="above">
+  <!-- populated by JS-->
+</div>
+
+<script src="./boston.js"></script>
+<script>
+  /*
+        para cada uno de los elementos de person convertir la posicion 11 en numero
+        ordenar person tomando como referencia su posición 11
+        sacar los primeros 5 elementos en un nuevo arreglo
+        imprimir en html cada elemento del nuevo arreglo
+        */
+
+  function renderTop5(boston, container){
+    var person = boston.data;
+    var html = '';
+
+    var top5Values = person.sort((a,b) => b[11]-a[11]).slice(0,5);
+    console.log(top5Values);
+    var len = top5Values.length;
+    
+    for (let i = 0; i < len; i++) {
+      html += '<li class="post">' +
+      '<h2>' + top5Values[i][8] + '</h2>' +
+      '<h3>' + top5Values[i][11] + '</h3>'
+    }
+    container.innerHTML = '<ul id = "boston">' + html + '</ul>' ;
+}
+renderTop5(boston, document.getElementById('top5'));
+
+function renderAvobe(boston, container) {
+    // const len = boston.length; // boston is an array
+    var person = boston.data;
+    var len = boston.data.length;
+    var html = '';
+
+    for (let i = 0; i < len; i++) {
+      let salary = parseInt(person[i][11]);
+      var topEmployees = person.filter( persona => salary>200000);
+          html += '<li class="post">' +
+          '<h2>' + person[i][8] + '</h2>' +
+          '<h3>' + person[i][11] + '</h3>'
+      }
+        container.innerHTML = '<ul id = "boston">' + html + '</ul>' ;
+  }
+  
+  renderAvobe(boston, document.getElementById('above'));
+
+/*function renderAvobe(boston, container) {
+    // const len = boston.length; // boston is an array
+    var person = boston.data;
+    var len = boston.data.length;
+    var html = '';
+    
+    for (let i = 0; i < len; i++) {
+      let sal = person[i][11];
+      let salary = parseInt(sal);
+      if ( salary > 100000 ) {
+          html += '<li class="post">' +
+          '<h2>' + person[i][8] + '</h2>' +
+          '<h3>' + person[i][11] + '</h3>'
+        }
+      }
+        container.innerHTML = '<ul id = "boston">' + html + '</ul>' ;
+  }
+  
+  renderAvobe(boston, document.getElementById('above'));*/
+</script>
+<!-- jrwtango@gmail.com 
+
+  Cómo saber si mi empresa está lista para crecer
+
+  cuantos ganan mas de 100,000
+
+  listout the top 5 salaries
+
+-->

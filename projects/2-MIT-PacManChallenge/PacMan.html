@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacMan: MIT Challenge Week 4 by Daniel Romero</title>
+    <script src="./scripts/PacMan.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <style>
+        body{
+            font-family: "Montserrat", Sans-serif;
+        }
+        a:hover{
+            color:white!important;
+        }
+        span{
+            color:white;
+            margin-bottom:1em;
+        }
+        #stop{
+            cursor: pointer;
+        }
+        #stop:hover{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div style="width:100vw; display: inline-block;">
+        <img id="PacMan" src="./img/PacMan1.png" width='200' onclick="Run(); this.onclick = null;" style="position:absolute"> </img>
+        <img id="Ghost" src="./img/Ghost1.png" width='200' style="position:absolute; left:-250px"> </img>
+    </div>
+    
+    <div style="margin-top: 250px; width:100vw; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <span>Please Click On PacMan To Start</span>
+        <span>Enjoy!</span>
+        <span id="stop" onclick="stopRun()">>> Click Here To Stop <<</span>
+        <a href="../../index.html" rel="nofollow" style="color: chartreuse;">>> Back To Home <<</a>
+    </div>
+    
+</body>
+</html>

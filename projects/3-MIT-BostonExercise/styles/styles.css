@@ -1,0 +1,63 @@
+h1,h2,h3,h4,h5,h6,th{
+    font-family: "Montserrat",sans-serif;
+}
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+header{
+    background-image: url(../img/boston.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -400px;
+    
+}
+
+.bgimg {
+    min-height: 200px;
+    backdrop-filter: blur(4px);
+}
+
+.bgimg .main-title, .bgimg .subtitle {
+    color: #fff;
+    text-shadow: 2px 2px 2px #2B2B2B;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+.numbers, .salary{
+    text-align: right;
+}
+.section-title {
+    font-weight: 700;
+}
+
+.firstname{
+    width:25%;
+}
+
+.footer{
+    position: sticky;
+    bottom:0;
+    z-index:2;
+}
+footer p {
+    font-size: .75rem;
+    text-align: center;
+}
+.btn-secondary{
+    margin-top:2em;
+    border:none;
+}
+.bg-secondary, .btn-secondary{
+    background-color:#f36!important;
+}
+.bg-secondary:hover, .btn-secondary:hover{
+    background-color:#60f!important;
+}
+.firstname{
+    min-width:25%;
+}
+
