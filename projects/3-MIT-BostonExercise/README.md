@@ -1,5 +1,5 @@
 ## Boston City Data Exercise 👨‍💻
-<img src='boston.png'>
+<img src='./img/boston.png'>
 
 This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. 
 
