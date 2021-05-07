@@ -71,7 +71,7 @@ SOFTWARE.
     - index.html
     - LICENSE
     - README.md
-- data
+- /data
     - boston.js
 - /img
     - boston.png
@@ -82,3 +82,5 @@ SOFTWARE.
     - boston.png
     - index.html
     - README.md
+- /styles
+    - styles.css
