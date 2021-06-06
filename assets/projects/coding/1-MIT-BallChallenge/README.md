@@ -1,26 +1,8 @@
-## Boston City Data Exercise 👨‍💻
-<img src='./img/boston.png'>
+## Bouncing Ball Exercise 👨‍💻
 
 This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. 
 
-The goal of this exercise is to pick out the number of people working in the city of Boston who earn over $100,000 and display it on the web page as shown below: 
-Number of people working in Boston earning over $100,000 is xxxx.
-
-Next, pick out the top 5 earners in Boston (total salary + overtime) and list them out in the web page as shown below:
-Name     Total Earned 
-
-Last, pick out the employees who earn over $200,000 and display it on the web as shown below;
-Name     Total Earned 
-
-You also need to use curl to get the Boston City data from https://pollysnips.s3.amazonaws.com/bostonEmployeeSalaries.json
-
-## Source Code 🤖
-
-The [source code](https://github.com/SoyDanielRomero/soydanielromero.github.io/tree/master/projects/3-MIT-BostonExercise/source) was provided by _Proffesor John Williams_ from _MIT xPro_ Professional Certificate in Coding: Full Stack Development with MERN. 
-
-**My contribution to this exercise is:**
-- The function renderBoston
-- Add some custom styles
+The goal of this exercise is to create a ball that bounce in a certain area while it changes its properties in a set interval. 
 
 ## Installation 🔧
 
@@ -30,9 +12,9 @@ To install this proyect in your machine, follow these steps:
 2. Go to content folder and add it to your code editor tool
 3. Open index.html
 
-## Usage 🚀
+## Watch Live 🚀
 
-To see this project running in live action please go to [Index.html](https://soydanielromero.github.io/projects/3-MIT-BostonExercise/index.html) and follow the instructions.
+To see this project running in live action please go to [Index.html](https://soydanielromero.github.io/projects/2-MIT-PacManChallenge/index.html) and follow the instructions.
 
 ## Support 🦸‍♂️️
 
@@ -67,19 +49,8 @@ SOFTWARE.
 ## Files 📁
 
 - Root
+    - ballShow.js
     - index.html
     - LICENSE
+    - project-details.html
     - README.md
-- /data
-    - boston.js
-- /img
-    - boston.png
-- /scripts
-    - filteringBoston.js
-- /source
-    - boston.js
-    - boston.png
-    - index.html
-    - README.md
-- /styles
-    - styles.css
