@@ -152,6 +152,9 @@ button:hover{
 .buttons{
     margin:2em 0;
 }
+form button{
+    margin-top:3em;
+}
 /* End Buttons */
 
 .customer-logos{
