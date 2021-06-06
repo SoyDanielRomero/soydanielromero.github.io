@@ -185,3 +185,19 @@ button:hover{
     font-weight: 400;
 }
 /* End Apellido */
+
+/* Portfolio */ 
+/* lightbox */ 
+.gslide-description {
+    border-radius: 0 0 30px 30px;
+}
+.gslide-image img{
+    border-radius: 30px 30px 0 0;
+}
+.gslide-title{
+    text-align: center;
+}
+/* End lightbox */
+
+
+/* End Portfolio */
