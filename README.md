@@ -91,9 +91,12 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
     - projects
         - /branding
             - /cyber-derecho-digital
+                - portfolio-details.html
             - /equaboiler
                 - Manual-de-Identidad-Visual-Corporativa-Equaboiler-compressed.pdf
+                - portfolio-details.html
             - /terapeuta
+                - portfolio-details.html
         - /coding
             - /1-MIT-BallChallenge
                 - ballShow.js
