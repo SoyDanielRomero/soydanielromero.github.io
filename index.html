@@ -29,6 +29,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
   <!-- Fuentes de Google -->
   <link
   rel="stylesheet"
@@ -94,8 +97,8 @@
           </div>
         </div>
         <div class="col">
-          <div id = "profilevideo" class="embed-responsive mt-5 youtube"> 
-            <!-- <iframe class="embed-responsive-item" width="560px" height="315px" src="https://www.youtube.com/embed/CcgUAFJxC7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <div class="embed-responsive mt-5 youtube"> 
+            <iframe class="embed-responsive-item" width="560px" height="315px" src="https://www.youtube.com/embed/CcgUAFJxC7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -777,7 +780,7 @@
 
   <!-- Facebook Chat -->
   <script>
-   window.onload = function () {
+  //  window.onload = function () {
       var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "2170503699881815");
     chatbox.setAttribute("attribution", "biz_inbox");
@@ -795,17 +798,10 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-
-    var youtube = document.getElementById('profilevideo');
-    var content = `<iframe class="embed-responsive-item" width="560px" height="315px" src="https://www.youtube.com/embed/CcgUAFJxC7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    youtube.innerHTML = content;
-
-}();
+  // }();
     
   </script>
 
-  <!-- Calendly -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <!-- Custom JavaScript file -->
   <script src="./assets/js/customs.js" type="text/javascript"></script>  
 
