@@ -795,6 +795,10 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    var youtube = document.getElementsByClassName('youtube');
+    youtube.innerHTML('<iframe class="embed-responsive-item" width="560px" height="315px" src="https://www.youtube.com/embed/CcgUAFJxC7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+
 }();
     
   </script>
