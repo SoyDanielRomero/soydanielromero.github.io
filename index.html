@@ -755,7 +755,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
@@ -781,7 +780,8 @@
 
   <!-- Facebook Chat -->
   <script>
-    var chatbox = document.getElementById('fb-customer-chat');
+   window.onload = function () {
+      var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "2170503699881815");
     chatbox.setAttribute("attribution", "biz_inbox");
     window.fbAsyncInit = function() {
@@ -798,6 +798,8 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+}();
+    
   </script>
 
   <!-- Custom JavaScript file -->
