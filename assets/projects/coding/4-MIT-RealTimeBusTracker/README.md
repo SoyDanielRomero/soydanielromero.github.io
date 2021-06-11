@@ -15,7 +15,7 @@ To install this proyect in your machine, follow these steps:
 
 ## Usage 🚀
 
-To see this project running in live action please go to [Index.html](https://soydanielromero.github.io/assets/projects/coding/4-MIT-AnimatesMapChallenge/index.html) and follow the instructions.
+To see this project running in live action please go to [Index.html](https://soydanielromero.github.io/assets/projects/coding/4-MIT-RealTimeBusTracker/index.html) and follow the instructions.
 
 ## Support 🦸‍♂️️
 
