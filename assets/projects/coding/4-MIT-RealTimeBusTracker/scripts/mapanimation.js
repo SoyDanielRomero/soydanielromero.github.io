@@ -17,12 +17,6 @@ async function run(){
 	console.log(new Date());
 	console.log(locations);
 
-	// if (busesMarkers.length >= 1){
-	// 	locations.forEach((bus, i)=>{
-	// 		marker.remove();
-	// 	});
-	// }
-
 	locations.forEach((bus, i) => {
 		var marker = new mapboxgl.Marker()
 		.setLngLat([bus.attributes.longitude, bus.attributes.latitude])
