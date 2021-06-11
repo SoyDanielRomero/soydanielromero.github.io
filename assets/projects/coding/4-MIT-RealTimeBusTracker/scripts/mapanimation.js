@@ -37,7 +37,7 @@ async function run(){
 	const locations = await getBusLocations();
 
 	locations.forEach((bus, i) => {
-		var marker = new mapboxgl.Marker()
+		var marker = new mapboxgl.Marker({ "color": colors[busesMarkers.length] })
 		.setLngLat([bus.attributes.longitude, bus.attributes.latitude])
 		.setPopup(new mapboxgl.Popup({offset: 25, closeOnClick: false, closeButton: false}).setHTML(`<h3>Bus #: ${i+1}</h3>`))
 		.addTo(map)
