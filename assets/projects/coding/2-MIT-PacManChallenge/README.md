@@ -1,4 +1,5 @@
-# Pacman Challenge 👨‍💻
+# Pacman Exercise 👨‍💻
+<img src='../../../img/portfolios/pacman.jpg'>
 
 This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. It is about detecting the edges of the screen and changing the images of the Pacman Character.
 
