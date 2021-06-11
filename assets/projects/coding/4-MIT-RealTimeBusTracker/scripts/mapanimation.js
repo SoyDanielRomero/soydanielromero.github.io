@@ -9,13 +9,10 @@ zoom: 12, // starting zoom
 });
 map.resize();
 
-var busesinTransit = [];
 var busesMarkers = [];
 async function run(){
 	// get bus data    
 	const locations = await getBusLocations();
-	console.log(new Date());
-	console.log(locations);
 
 	locations.forEach((bus, i) => {
 		var marker = new mapboxgl.Marker()
@@ -34,7 +31,6 @@ async function run(){
 		}
 	}
 	}
-	busesinTransit = [];
 
 	setTimeout(eraseMarks,7500)
 
@@ -50,4 +46,6 @@ async function getBusLocations(){
 	return json.data;
 }
 
-run();
+map.on('load', function () {
+	run()
+  })
