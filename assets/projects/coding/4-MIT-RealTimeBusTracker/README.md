@@ -5,7 +5,7 @@ This is an exercise developed during MIT xPro Professional Certificate in Coding
 
 The goal of this exercise is to fetch data from an API and use it to animate a map.
 
-I implement a function to update MBTA Route 1 buses geolocation in real time every 15 seconds, and I attached to them their own markers with the bus number to identify them. I added the buses' geolocation to an array and create markers with their positions. I also wrote a function to get rid of previous markers.
+I implemented a function to update MBTA Route 1 buses geolocation in real time every 15 seconds, and I attached to them their own markers with the bus number to identify them. I added the buses' geolocation to an array and create markers with their positions. I also wrote a function to get rid of previous markers.
 
 ## Installation 🔧
 
