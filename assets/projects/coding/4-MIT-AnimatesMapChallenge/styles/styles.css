@@ -32,3 +32,6 @@ box-shadow: white;
 .bg-secondary:hover, .btn-secondary:hover{
     background-color:#60f!important;
 }
+.mapboxgl-popup-content h3{
+    font-size: 0.9em!important;
+}
