@@ -35,11 +35,12 @@ var busesMarkers = [];
 async function run(){
 	// get bus data    
 	const locations = await getBusLocations();
-
+	console.log(locations)
 	locations.forEach((bus, i) => {
 		var marker = new mapboxgl.Marker({ "color": colors[i] })
 		.setLngLat([bus.attributes.longitude, bus.attributes.latitude])
-		.setPopup(new mapboxgl.Popup({offset: 25, closeOnClick: false, closeButton: false}).setHTML(`<h3>Bus #: ${i+1}</h3>`))
+		.setPopup(new mapboxgl.Popup({offset: 25, closeOnClick: false, closeButton: false}).setHTML(`<h3>Bus ID <br>
+		${bus.attributes.label}</h3>`))
 		.addTo(map)
 		.togglePopup();
 
@@ -54,26 +55,31 @@ async function run(){
 	}
 	}
 
+	locations.forEach((marker, i)=>{
+		let popUp = document.getElementsByClassName('mapboxgl-popup-content');
+		popUp[i].style.background = colors[i];
+	});
+
 	setTimeout(eraseMarks,7500)
 
 	// timer
 	setTimeout(run, 15000);
 }
 
-async function noBuses(){
-	const locations = await getBusLocations();
+// async function noBuses(){
+// 	const locations = await getBusLocations();
 	
-	if(locations == []){
-		element = document.getElementsByClassName('no-buses');
-		element.innerHTML = "There is no Buses in transit at this moment in MBTA Route 1. Come back in a few hours. Current Time: " + new Date().toUTCString();
-	}
-	setTimeout(()=>{
-		if(locations == []){
-			noBuses();
-		}
-	}, 1000);
+// 	if(locations == []){
+// 		element = document.getElementsByClassName('no-buses');
+// 		element.innerHTML = "There is no Buses in transit at this moment in MBTA Route 1. Come back in a few hours. Current Time: " + new Date().toUTCString();
+// 	}
+// 	setTimeout(()=>{
+// 		if(locations == []){
+// 			noBuses();
+// 		}
+// 	}, 1000);
 
-}
+// }
 
 		
 

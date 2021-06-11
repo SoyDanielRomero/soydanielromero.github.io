@@ -39,5 +39,8 @@ box-shadow: white;
     background-color:#60f!important;
 }
 .mapboxgl-popup-content h3{
-    font-size: 0.9em!important;
+    font-family: "Open Sans";
+    font-size: 1em!important;
+    font-weight: 700;
+    color:white;
 }
