@@ -13,6 +13,7 @@ var busesMarkers = [];
 async function run(){
 	// get bus data    
 	const locations = await getBusLocations();
+	console.log(locations);
 
 	locations.forEach((bus, i) => {
 		var marker = new mapboxgl.Marker()
@@ -37,7 +38,19 @@ async function run(){
 	// timer
 	setTimeout(run, 15000);
 }
-		
+
+async function noBuses(){
+	const locations = await getBusLocations();
+
+	if(locations.length == 0){
+		let h2 = document.createElement('h2');
+			h2.textContent = "No hay buses en circulación en este momento";
+		document.getElementsByClassName('map-overlay')[0].appendChild(h2);
+		locations[1] = 0;
+		console.log(locations.length)
+	}
+}
+noBuses();		
 // Request bus data from MBTA
 async function getBusLocations(){
 	const url = 'https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip';
@@ -47,5 +60,5 @@ async function getBusLocations(){
 }
 
 map.on('load', function () {
-	run()
-  })
+	run();
+  });
