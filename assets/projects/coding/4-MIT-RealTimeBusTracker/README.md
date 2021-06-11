@@ -7,13 +7,14 @@ The goal of this exercise is to fetch data from an API and use it to animate a m
 
 I implemented a function to update MBTA Route 1 buses geolocation in real time every 15 seconds, and I attached to them their own markers with the bus number to identify them. I added the buses' geolocation to an array and create markers with their positions. I also wrote a function to get rid of previous markers.
 
-## Installation 🔧
+## How to use 🔧
 
 To install this proyect in your machine, follow these steps:
 
 1. Download or clone the project
 2. Go to content folder and add it to your code editor tool
-3. Open index.html
+3. Go to MapBox and get an API Token, in mapanimation.js fille, replace mapboxgl.accessToken = "THIS VALUE"; with your own API token
+4. Open index.html
 
 ## Usage 🚀
 
