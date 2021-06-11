@@ -23,8 +23,10 @@ background-color: white;
 box-shadow: white;
 }
 .map-overlay h2{
-    color:#f36;
+    color:#fff;
+    font-weight: 700;
     text-align: center;
+    background-color: #f36;
 }
 .btn-secondary{
     margin-top:2em;

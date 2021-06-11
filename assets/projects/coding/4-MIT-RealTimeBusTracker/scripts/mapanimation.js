@@ -1,3 +1,25 @@
+const colors = [
+	'#f44336',
+	'#4caf50',
+	'#e91e63',
+	'#ffc107',
+	'#9c27b0',
+	'#cddc39',
+	'#673ab7',
+	'#8bc34a',
+	'#3f51b5',
+	'#2196f3',
+	'#ff9800',
+	'#03a9f4',
+	'#ff5722',
+	'#00bcd4',
+	'#795548',
+	'#009688',
+	'#9e9e9e',
+	'#ffeb3b',
+	'#607d8b'
+  ]
+
 mapboxgl.accessToken =
 "pk.eyJ1Ijoic295ZGFuaWVscm9tZXJvIiwiYSI6ImNrcHFmaGU3OTAyemkyb3F2Z3F2eTUyMW4ifQ.kcV610ChAkDgygc915Y6gQ";
 
@@ -13,7 +35,6 @@ var busesMarkers = [];
 async function run(){
 	// get bus data    
 	const locations = await getBusLocations();
-	console.log(locations);
 
 	locations.forEach((bus, i) => {
 		var marker = new mapboxgl.Marker()
@@ -41,16 +62,21 @@ async function run(){
 
 async function noBuses(){
 	const locations = await getBusLocations();
-
-	if(locations.length == 0){
-		let h2 = document.createElement('h2');
-			h2.textContent = "No hay buses en circulación en este momento";
-		document.getElementsByClassName('map-overlay')[0].appendChild(h2);
-		locations[1] = 0;
-		console.log(locations.length)
+	
+	if(locations == []){
+		element = document.getElementsByClassName('no-buses');
+		element.innerHTML = "There is no Buses in transit at this moment in MBTA Route 1. Come back in a few hours. Current Time: " + new Date().toUTCString();
 	}
+	setTimeout(()=>{
+		if(locations == []){
+			noBuses();
+		}
+	}, 1000);
+
 }
-noBuses();		
+
+		
+
 // Request bus data from MBTA
 async function getBusLocations(){
 	const url = 'https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip';
