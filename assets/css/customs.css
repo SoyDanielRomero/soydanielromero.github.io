@@ -224,6 +224,15 @@ p.skills-content {
 }
 /* End footer logo */
 
+/* Projects links */
+
+a.portfolio-details-lightbox{
+    color:#f06!important;
+}
+a.portfolio-details-lightbox:hover{
+    color:#60f!important;
+}
+
 
 /* Responsive Tablet */
 @media screen and (max-width: 1024px) {
