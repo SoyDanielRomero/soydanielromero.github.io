@@ -61,13 +61,25 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
             - mit-xpro-logo.png
             - neetwork_logo.jpg
             - nextU.jpg
-        - /portfolio
+        - portfolio-details
             - auyo.jpg
-            - bouncing.jpg
             - equaboiler.jpg
             - jennyestradaruiz.jpg
             - marca-personal.jpg
+            - registro-municipal-playas.jpg
+            - sanchez.jpg
+            - sergeva.jpg
+            - swissenap.jpg
+        - /portfolios
+            - auyo.jpg
+            - bostonbus.jpg
+            - bouncing.jpg
+            - equaboiler.jpg
+            - eyes.png
+            - jennyestradaruiz.jpg
+            - marca-personal.jpg
             - pacman.jpg
+            - pacmen.jpg
             - registro-municipal-playas.jpg
             - sanchez.jpg
             - sergeva.jpg
