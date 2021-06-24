@@ -707,8 +707,6 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
                 - viewer.js
                 - viewer.js.map
             LICENSE
-        - /php-email-form
-            - validate.js
         - /purecounter
             - purecounter.js
         - /swiper
@@ -720,6 +718,3 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
             - typed.min.js.map
         - /waypoints
             - waypoints.js
-- /forms
-    - contact.php
-    - Readme.txt
