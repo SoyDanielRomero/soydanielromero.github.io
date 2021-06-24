@@ -99,7 +99,10 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
         - customs.js
         - main.js
     - /pages
+        - eyeexercise-project-details.html
+        - pacmenexercise-project-details.html
         - projects.html
+        - realtimebustracker-project-details.html
     - /projects
         - /branding
             - /cyber-derecho-digital
@@ -153,7 +156,6 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
                 - eyes.png
                 - index.html
                 - LICENSE
-                - project-details.html
                 - README.md
                 - styles.css
             - /PacMen
@@ -167,14 +169,12 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
                 - index.html
                 - LICENSE
                 - pacmen.js
-                - project-details.html
                 - README.md
             - /RealTimeBusTracker
                 - bostonbus.jpg
                 - index.html
                 - LICENSE
                 - mapanimation.js
-                - project-details.html
                 - README.md
                 - styles.css
         - /web-design
