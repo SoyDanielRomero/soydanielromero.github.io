@@ -49,10 +49,10 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
     - README.md
 
 - /assets
-    - css
+    - /css
         - customs.css
         - style.css
-    - img
+    - /img
         - /institutes
             - conviertemas.jpg
             - eidhi.jpg
@@ -83,12 +83,12 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
         - favicon.png
         - hero-bg.jpeg
         - logo-daniel-romero.png
-    - js
+    - /js
         - customs.js
         - main.js
-    - php
-        - contact.php
-    - projects
+    - /pages
+        - projects.html
+    - /projects
         - /branding
             - /cyber-derecho-digital
                 - portfolio-details.html
@@ -136,6 +136,35 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
                 - index.html
                 - LICENSE
                 - README.md
+            - /EyeExercise
+                - eyes.js
+                - eyes.png
+                - index.html
+                - LICENSE
+                - project-details.html
+                - README.md
+                - styles.css
+            - /PacMen
+                - /images
+                    - PacMan1.png
+                    - PacMan2.png
+                    - PacMan3.png
+                    - PacMan4.png
+                - /styles
+                    - styles.css
+                - index.html
+                - LICENSE
+                - pacmen.js
+                - project-details.html
+                - README.md
+            - /RealTimeBusTracker
+                - bostonbus.jpg
+                - index.html
+                - LICENSE
+                - mapanimation.js
+                - project-details.html
+                - README.md
+                - styles.css
         - /web-design
             - /auyo
                 - portfolio-details.html
