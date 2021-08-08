@@ -1,0 +1,12 @@
+[submodule "assets/projects/coding/anime-quotes"]
+	path = assets/projects/coding/anime-quotes
+	url = https://github.com/SoyDanielRomero/anime-quotes.git
+[submodule "assets/projects/coding/cute-atm"]
+	path = assets/projects/coding/cute-atm
+	url = https://github.com/SoyDanielRomero/cute-atm.git
+[submodule "assets/projects/coding/EyeExercise"]
+	path = assets/projects/coding/EyeExercise
+	url = https://github.com/SoyDanielRomero/EyeExercise.git
+[submodule "assets/projects/coding/holy-grail-layout-react"]
+	path = assets/projects/coding/holy-grail-layout-react
+	url = https://github.com/SoyDanielRomero/holy-grail-layout-react.git
