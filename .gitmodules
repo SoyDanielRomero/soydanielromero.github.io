@@ -10,3 +10,12 @@
 [submodule "assets/projects/coding/holy-grail-layout-react"]
 	path = assets/projects/coding/holy-grail-layout-react
 	url = https://github.com/SoyDanielRomero/holy-grail-layout-react.git
+[submodule "assets/projects/coding/PacMenExercise"]
+	path = assets/projects/coding/PacMenExercise
+	url = https://github.com/SoyDanielRomero/PacMenExercise.git
+[submodule "assets/projects/coding/RealTimeBusTracker"]
+	path = assets/projects/coding/RealTimeBusTracker
+	url = https://github.com/SoyDanielRomero/RealTimeBusTracker.git
+[submodule "assets/projects/coding/todolist"]
+	path = assets/projects/coding/todolist
+	url = https://github.com/SoyDanielRomero/todolist.git
