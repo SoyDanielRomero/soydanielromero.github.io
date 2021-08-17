@@ -19,3 +19,6 @@
 [submodule "assets/projects/coding/todolist"]
 	path = assets/projects/coding/todolist
 	url = https://github.com/SoyDanielRomero/todolist.git
+[submodule "assets/projects/coding/tik-tak-toe"]
+	path = assets/projects/coding/tik-tak-toe
+	url = https://github.com/SoyDanielRomero/tik-tak-toe.git
