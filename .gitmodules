@@ -25,9 +25,6 @@
 [submodule "assets/projects/coding/badbank"]
 	path = assets/projects/coding/badbank
 	url = https://github.com/SoyDanielRomero/badbank.git
-[submodule "assets/projects/coding/shopping-cart"]
-	path = assets/projects/coding/shopping-cart
-	url = https://github.com/SoyDanielRomero/shopping-cart.git
 [submodule "assets/projects/coding/Daniel-RomeroBankingApplication"]
 	path = assets/projects/coding/Daniel-RomeroBankingApplication
 	url = https://github.com/SoyDanielRomero/Daniel-RomeroBankingApplication.git
