@@ -28,6 +28,3 @@
 [submodule "assets/projects/coding/shopping-cart"]
 	path = assets/projects/coding/shopping-cart
 	url = https://github.com/SoyDanielRomero/shopping-cart.git
-[submodule "assets/projects/coding/daniel-romerobankingapplication"]
-	path = assets/projects/coding/daniel-romerobankingapplication
-	url = https://github.com/SoyDanielRomero/daniel-romerobankingapplication.git
