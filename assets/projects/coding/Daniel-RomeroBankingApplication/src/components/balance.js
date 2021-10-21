@@ -7,12 +7,12 @@ function Balance() {
   let user = ctx.users.filter((user) => user.loged === true);
   let index;
   let balance;
-  if (user.length > 0) {
+  if (user.length === 0) {
+    alert('Please Login first');
+    window.location.assign('#/login/');
+  } else {
     index = ctx.users.indexOf(user[0]);
     balance = ctx.users[index].balance;
-  } else {
-    alert('Please Login first');
-    window.location.assign('/assets/projects/coding/badbank/#/login/');
   }
   return (
     <>

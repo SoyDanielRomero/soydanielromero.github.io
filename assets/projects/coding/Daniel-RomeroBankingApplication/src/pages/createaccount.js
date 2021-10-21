@@ -2,8 +2,11 @@ import React from 'react';
 import BankForm from '../components/bankform';
 import { UserContext } from '../context';
 
+// import { Redirect } from 'react-router-dom';
+
 function CreateAccount() {
   const ctx = React.useContext(UserContext);
+
   function createaccount(name, email, password) {
     ctx.users.push({ name, email, password, balance: 100, loged: false });
   }

@@ -1,23 +1,30 @@
 import React from 'react';
 import BankForm from '../components/bankform';
-// import { UserContext } from '../context';
+import { UserContext } from '../context';
 
 function Deposit() {
-  // const ctx = React.useContext(UserContext);
+  const [depositError, setDepositError] = React.useState(false);
+  const ctx = React.useContext(UserContext);
 
   function deposit(name, email, password, loged, amount) {
-    // ctx.users.filter((user) => {
-    //   console.log('user.loged', user.loged);
-    //   if (user.loged === false) {
-    //     alert('Please Login first');
-    //     return window.location.assign(
-    //       '/assets/projects/coding/badbank/#/login/'
-    //     );
-    //   } else {
-    //     let currentBalance = user.balance;
-    //     return (user.balance = Number(currentBalance) + Number(amount));
-    //   }
-    // });
+    let user = ctx.users.filter((user) => user.loged === true);
+    if (user.length === 0) {
+      alert('Please Login first');
+      window.location.assign('#/login/');
+    } else {
+      let index = ctx.users.indexOf(user[0]);
+      if (amount > 0) {
+        setDepositError(false);
+        ctx.users[index].balance += Number(amount);
+      } else {
+        setDepositError(true);
+
+        return false;
+      }
+      return true;
+    }
+
+    console.log('user', user);
   }
   return (
     <div className='container d-flex justify-content-center'>
@@ -28,10 +35,10 @@ function Deposit() {
         hideEmail={true}
         hidePassword={true}
         hideAmount={false}
-        hideBalance={true}
+        hideBalance={false}
         handleButton='Deposit'
         handle={deposit}
-        successButton='Make another deposit'
+        successButton={depositError ? 'Try again' : 'Make Another Withdraw'}
       />
     </div>
   );

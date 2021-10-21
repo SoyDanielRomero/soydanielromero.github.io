@@ -8,35 +8,27 @@ import Login from './components/login';
 import Balance from './components/balance';
 import React from 'react';
 import { Route, HashRouter } from 'react-router-dom';
-import { UserContext } from './context';
+import { ContextProvider } from './context';
 
 function App() {
   return (
     <HashRouter>
-      <div className='d-flex justify-content-around pl-5 container'>
-        <NavBar />
-      </div>
-      <div className='d-flex justify-content-center mt-5 container'>
-        <UserContext.Provider
-          value={{
-            users: [
-              {
-                name: 'Daniel',
-                email: 'daniromerro@gmail.com',
-                password: 'secret',
-                balance: 100,
-                loged: false,
-              },
-            ],
-          }}>
-          <Route path='/' exact component={Home} />
-          <Route path='/createaccount/' exact component={CreateAccount} />
-          <Route path='/login/' exact component={Login} />
-          <Route path='/deposit/' exact component={Deposit} />
-          <Route path='/withdraw/' exact component={Withdraw} />
-          <Route path='/balance/' exact component={Balance} />
-          <Route path='/alldata/' exact component={AllData} />
-        </UserContext.Provider>
+      <div className='d-flex justify-content-around flex-column pl-5 container'>
+        <ContextProvider>
+          <NavBar />
+          <br />
+          <div
+            className='container-fluid d-flex justify-content-center'
+            style={{ padding: '20px' }}>
+            <Route path='/' exact component={Home} />
+            <Route path='/CreateAccount/' component={CreateAccount} />
+            <Route path='/login/' component={Login} />
+            <Route path='/deposit/' component={Deposit} />
+            <Route path='/withdraw/' component={Withdraw} />
+            <Route path='/balance/' component={Balance} />
+            <Route path='/alldata/' component={AllData} />
+          </div>
+        </ContextProvider>
       </div>
     </HashRouter>
   );
