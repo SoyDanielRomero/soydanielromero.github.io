@@ -31,6 +31,3 @@
 [submodule "assets/projects/coding/daniel-romerobankingapplication"]
 	path = assets/projects/coding/daniel-romerobankingapplication
 	url = https://github.com/SoyDanielRomero/daniel-romerobankingapplication.git
-[submodule "assets/projects/coding/badbank3tier/badbank3tier"]
-	path = assets/projects/coding/badbank3tier/badbank3tier
-	url = https://github.com/SoyDanielRomero/badbank3tier.git
